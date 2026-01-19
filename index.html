@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마인드업 문구 💝</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6dcac1 0%, #5ab9b0 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5ab9b0;
+            margin-bottom: 15px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .message-list {
+            list-style: none;
+            counter-reset: message-counter;
+        }
+
+        .message-item {
+            counter-increment: message-counter;
+            background: linear-gradient(135deg, #f0fffe 0%, #e8faf8 100%);
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            border-radius: 15px;
+            border-left: 5px solid #6dcac1;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .message-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(109, 202, 193, 0.3);
+        }
+
+        .message-item::before {
+            content: counter(message-counter);
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #6dcac1 0%, #5ab9b0 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 3px 10px rgba(109, 202, 193, 0.4);
+        }
+
+        .message-wrapper {
+            padding-left: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+            font-size: 1em;
+        }
+
+        .footer strong {
+            color: #5ab9b0;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            
+            .message-item {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .message-item {
+                padding: 15px 20px;
+                font-size: 1em;
+            }
+
+            .message-item::before {
+                width: 35px;
+                height: 35px;
+                left: -20px;
+                font-size: 0.85em;
+            }
+
+            .message-wrapper {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>마인드업 문구 💝</h1>
+        <p class="subtitle">서로에게 전할 수 있는 따뜻한 메시지들입니다</p>
+        
+        <div class="message-wrapper">
+            <ul class="message-list">
+                <li class="message-item">당신의 밝은 표정이 이 자리를 따뜻하게 만들어요 😊</li>
+                <li class="message-item">당신과 함께 있으니 편안한 분위기가 느껴져요 🌟</li>
+                <li class="message-item">당신의 눈빛에서 진심이 느껴져요 ✨</li>
+                <li class="message-item">당신은 새로운 만남에 열린 마음을 가진 사람이에요 🌈</li>
+                <li class="message-item">당신의 목소리가 참 듣기 좋아요 🎵</li>
+                <li class="message-item">당신은 이 자리에 있는 것만으로도 빛이 나요 💫</li>
+                <li class="message-item">당신의 미소가 주변을 환하게 해요 🌻</li>
+                <li class="message-item">당신에게서 긍정 에너지가 느껴져요 ⚡</li>
+                <li class="message-item">당신은 편안한 분위기를 만드는 사람이에요 🤗</li>
+                <li class="message-item">당신의 첫인상이 정말 좋아요 💝</li>
+                <li class="message-item">당신은 이 자리를 더 의미있게 만들어주는 사람이에요 🎯</li>
+                <li class="message-item">당신과 대화하니 즐거워요 💬</li>
+                <li class="message-item">당신의 존재감이 느껴져요 👑</li>
+                <li class="message-item">당신은 좋은 에너지를 가진 사람이에요 ☀️</li>
+                <li class="message-item">당신의 웃음소리가 기분 좋게 들려요 😄</li>
+                <li class="message-item">당신은 함께하고 싶은 사람이에요 🌸</li>
+                <li class="message-item">당신에게서 배울 점이 많을 것 같아요 📚</li>
+                <li class="message-item">당신은 매력적인 사람이에요 ✨</li>
+                <li class="message-item">당신과 함께하니 시간 가는 줄 몰라요 ⏰</li>
+                <li class="message-item">당신의 분위기가 참 좋아요 🌿</li>
+                <li class="message-item">당신은 특별한 무언가가 있는 사람이에요 💎</li>
+                <li class="message-item">당신과 이야기 나누고 싶어요 💭</li>
+                <li class="message-item">당신은 이 순간을 더 풍성하게 만들어줘요 🎨</li>
+                <li class="message-item">당신의 에너지가 전해져요 🔥</li>
+                <li class="message-item">당신을 알게 되어 기뻐요 🎉</li>
+                <li class="message-item">당신은 인상적인 사람이에요 🌟</li>
+                <li class="message-item">당신과 함께해서 좋아요 💚</li>
+                <li class="message-item">당신은 멋진 사람이에요 🎭</li>
+                <li class="message-item">당신의 열정이 느껴져요 🚀</li>
+                <li class="message-item">당신은 소중한 존재예요 🌺</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>💝 <strong>총 30개</strong>의 마인드업 문구 💝</p>
+            <p style="margin-top: 10px;">서로에게 마음을 전하며 따뜻한 시작을 만들어보세요!</p>
+        </div>
+    </div>
+</body>
+</html>
